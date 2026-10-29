@@ -142,7 +142,7 @@ function setupTooltips(){
 }
 async function init(){
  try{
-  const [response,officialResponse]=await Promise.all([fetch('data.json'),fetch('official.json')]);if(!response.ok||!officialResponse.ok)throw new Error('Snapshot could not be loaded');[DATA,OFFICIAL]=await Promise.all([response.json(),officialResponse.json()]);
+  const [response,officialResponse]=await Promise.all([fetch('data.json?v=20261029-audit2'),fetch('official.json?v=20261029-audit2')]);if(!response.ok||!officialResponse.ok)throw new Error('Snapshot could not be loaded');[DATA,OFFICIAL]=await Promise.all([response.json(),officialResponse.json()]);
   $('#asof').textContent=`Harvested ${fmtTime(DATA.meta.finishedAt)} EDT`;
   $('#window').textContent=`${DATA.meta.postHours.toFixed(1)} hours after update`;
   $('#provenance').innerHTML=[['Profiles read',`${DATA.meta.profilesRead} / ${DATA.meta.totalKeys}`],['Unresolved read errors',DATA.meta.finalErrorCount],['Eligible current-generation profiles',DATA.meta.eligible],['Excluded from cohorts',DATA.meta.profilesRead-DATA.meta.eligible],['Harvest started',`${fmtTime(DATA.meta.startedAt)} EDT`],['Harvest finished',`${fmtTime(DATA.meta.finishedAt)} EDT`],['Cutoff (UTC)', 'Oct 29, 04:30'],['Current save generation',DATA.meta.generation]].map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('');
