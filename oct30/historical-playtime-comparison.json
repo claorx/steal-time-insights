@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "pulledOn": "2026-10-30",
+    "timezone": "America/Toronto",
+    "source": "Roblox Creator Dashboard Explore",
+    "metric": "ST_FirstSessionSeconds",
+    "aggregations": [
+      "Average",
+      "Count"
+    ],
+    "timeInterval": "Cumulative",
+    "dateRange": "Last 7 days",
+    "breakdown": "Custom field 3 (enrollment cohort)"
+  },
+  "historicalCohorts": [
+    {
+      "enrollmentDay": "2026-10-27",
+      "endedFirstSessions": 9,
+      "meanSeconds": 1013.33
+    },
+    {
+      "enrollmentDay": "2026-10-28",
+      "endedFirstSessions": 526,
+      "meanSeconds": 199.81
+    },
+    {
+      "enrollmentDay": "2026-10-29",
+      "endedFirstSessions": 589,
+      "meanSeconds": 268.39
+    }
+  ],
+  "historicalCombined": {
+    "endedFirstSessions": 1124,
+    "meanSeconds": 242.26133451957296,
+    "calculation": "Count-weighted average of three displayed cohort means, rounded to two decimals."
+  },
+  "newTutorial": {
+    "enrollmentDay": "2026-10-30",
+    "tutorial": "Type 2",
+    "endedFirstSessions": 317,
+    "meanSeconds": 254.34
+  },
+  "comparison": {
+    "vsHistoricalCombined": {
+      "differenceSeconds": 12.078665480427048,
+      "relativeDifference": 0.04985799943841718
+    },
+    "vsLatestHistoricalDay": {
+      "enrollmentDay": "2026-10-29",
+      "differenceSeconds": -14.049999999999983,
+      "relativeDifference": -0.05234919333805277
+    }
+  },
+  "interpretation": "The new tutorial is about 5% above the pooled historical baseline, but about 5% below the most recent historical day's cohort. This does not establish an improvement in playtime.",
+  "methodology": [
+    "Both families use the same ST_FirstSessionSeconds event; sample sizes count those event records.",
+    "Original filters: A/B/C, tutorial_order_v2, enrollment segments new:2026-10-27 through new:2026-10-29. Type 2 filters: Type2_A/B/C, tutorial_types_v1, new:2026-10-30.",
+    "Dates refer to enrollment segments generated in UTC, rather than chart timestamp labels that may display a different local day.",
+    "Only first sessions with an available end event are included. Today's ongoing sessions are excluded; historical cohorts are more mature.",
+    "Day, traffic mix, device mix and other updates can affect historical comparisons. No causal or statistically conclusive lift is claimed.",
+    "Oct 27 has only nine events and a large mean. It is included in the pooled result.",
+    "The earlier 24% figure used today's control of 82 ended first sessions and an earlier Type 2 snapshot of 309. It was not a comparison with all prior days.",
+    "The later Type 2 query returned 317 end events and a mean of 254.34 seconds. The earlier snapshot had 309 and 257.51 seconds. Neither is a fully mature cohort."
+  ],
+  "sources": {
+    "historical": "https://create.roblox.com/dashboard/creations/experiences/10352248866/analytics/explore?tab=ST_Engagement&rangeType=Last7Days&filter_CustomField1=A&filter_CustomField1=B&filter_CustomField1=C&filter_CustomField2=tutorial_order_v2&filter_CustomField3=new%3A2026-10-27&filter_CustomField3=new%3A2026-10-28&filter_CustomField3=new%3A2026-10-29&metric=CustomEventsV2&granularity=Cumulative&filter_CustomEventName=ST_FirstSessionSeconds&filter_AggregationType=Average&chartType=Table&tableColumnsV1=tc1.1U-7DoMwDPwXzyxlqrIh1I5dQF0qhFIwUdQ8qsSJhBD_3pB2gE_o5jvfnX0LRHReWgPsVMBgVdDGA3ss8MIZGBB_Kqwz3Z-gAJrfmGiN5OSQ8G9gUAdPVl8iGvL3Mm0mqShF56xRajTfK3vhjWtMyshVwE0ITdtfpfPUoN_UDQ7WjB66tThmVEI4FJwSareH9hlVKsQFJlO2HWv0Osazm0r_J2VqGwzlKt36AQ&breakdown=CustomField3",
+    "newTutorial": "https://create.roblox.com/dashboard/creations/experiences/10352248866/analytics/explore?tab=ST_Engagement&rangeType=Last7Days&filter_CustomField1=Type2_A&filter_CustomField1=Type2_B&filter_CustomField1=Type2_C&filter_CustomField2=tutorial_types_v1&filter_CustomField3=new%3A2026-10-30&metric=CustomEventsV2&granularity=Cumulative&filter_CustomEventName=ST_FirstSessionSeconds&filter_AggregationType=Average&chartType=Table&tableColumnsV1=tc1.1U-7DoMwDPwXzyxlqrIh1I5dQF0qhFIwUdQ8qsSJhBD_3pB2gE_o5jvfnX0LRHReWgPsVMBgVdDGA3ss8MIZGBB_Kqwz3Z-gAJrfmGiN5OSQ8G9gUAdPVl8iGvL3Mm0mqShF56xRajTfK3vhjWtMyshVwE0ITdtfpfPUoN_UDQ7WjB66tThmVEI4FJwSareH9hlVKsQFJlO2HWv0Osazm0r_J2VqGwzlKt36AQ&breakdown=CustomField3"
+  },
+  "earlierSavedProfileSnapshot": {
+    "asOf": "2026-10-29T15:12:28Z",
+    "eligibleEndedFirstSessions": 954,
+    "meanSeconds": 222.6006289308176,
+    "medianSeconds": 139,
+    "byTorontoEnrollmentDay": [
+      {
+        "day": "2026-10-27",
+        "n": 10,
+        "meanSeconds": 338
+      },
+      {
+        "day": "2026-10-28",
+        "n": 677,
+        "meanSeconds": 211.42392909896603
+      },
+      {
+        "day": "2026-10-29",
+        "n": 267,
+        "meanSeconds": 246.61797752808988
+      }
+    ],
+    "note": "Incomplete for Oct 29; uses stored per-profile durations. Primary comparison uses the same dashboard event for old and new."
+  }
+}

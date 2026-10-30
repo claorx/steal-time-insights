@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "pulledOn": "2026-10-30",
+    "timezone": "America/Toronto",
+    "dataLastUpdatedAsDisplayed": "Oct 30, 11:00 AM",
+    "dateRangeAsDisplayed": "Last 1 day",
+    "experiment": "tutorial_types_v1",
+    "enrollmentSegment": "new:2026-10-30",
+    "source": "Roblox Creator Dashboard"
+  },
+  "groups": {
+    "original": {
+      "customField1": [
+        "A",
+        "B",
+        "C"
+      ],
+      "players": 103,
+      "engagementCounts": {
+        "sessionStarted": 103,
+        "oneMinute": 80,
+        "threeMinutes": 45,
+        "fiveMinutes": 20,
+        "tenMinutes": 5,
+        "twentyMinutes": 2,
+        "thirtyMinutes": 1
+      },
+      "firstSession": {
+        "event": "ST_FirstSessionSeconds",
+        "averageAggregationSeconds": 207.62,
+        "countAggregation": 82
+      }
+    },
+    "new": {
+      "customField1": [
+        "Type2_A",
+        "Type2_B",
+        "Type2_C"
+      ],
+      "players": 367,
+      "engagementCounts": {
+        "sessionStarted": 367,
+        "oneMinute": 298,
+        "threeMinutes": 166,
+        "fiveMinutes": 95,
+        "tenMinutes": 36,
+        "twentyMinutes": 8,
+        "thirtyMinutes": 4
+      },
+      "firstSession": {
+        "event": "ST_FirstSessionSeconds",
+        "averageAggregationSeconds": 257.51,
+        "countAggregation": 309
+      }
+    }
+  },
+  "analysis": {
+    "firstSessionMeanDifferenceSeconds": 49.889999999999986,
+    "firstSessionMeanRelativeLift": 0.240294769290049,
+    "fiveMinuteDifferencePercentagePoints": 6.468082854950927,
+    "tenMinuteDifferencePercentagePoints": 4.954895373138277,
+    "fiveMinuteDifference95CIPercentagePoints": [
+      -3.181564928939705,
+      14.482706018678687
+    ],
+    "tenMinuteDifference95CIPercentagePoints": [
+      -1.6088727104059182,
+      9.392379022465676
+    ],
+    "intervalMethod": "Newcombe-style Wilson interval for difference in proportions; unadjusted exploratory comparisons"
+  },
+  "methodology": [
+    "Both tutorial types are filtered to tutorial_types_v1 and new:2026-10-30 in the same Last 1 day reporting window.",
+    "Average first-session duration uses the ST_FirstSessionSeconds custom event, Aggregation Average, Time interval Cumulative. Count uses the same event and Count aggregation.",
+    "Code inspection confirms ST_FirstSessionSeconds emits when an eligible player's first session ends. These means exclude sessions whose end event is not present by the reporting cutoff.",
+    "Engagement milestones use ST_Engagement with By user. The source logs per-session elapsed-time milestones, so a player may qualify from a return session in the reporting window. These milestone percentages are not finalized first-session survival estimates.",
+    "Enrollment and experiment are aligned; device mix, traffic source, rollout timing and session maturity are not adjusted.",
+    "The mean is based on rounded dashboard values. Variance/raw session durations are not available in this pull, so no confidence interval for the mean difference was computed.",
+    "The 5- and 10-minute difference intervals include zero. The early observed lift should not be treated as a demonstrated causal effect."
+  ],
+  "sources": {
+    "engagementNew": "https://create.roblox.com/dashboard/creations/experiences/10352248866/analytics/funnels?tab=ST_Engagement&rangeType=Last1Day&filter_CustomField1=Type2_A&filter_CustomField1=Type2_B&filter_CustomField1=Type2_C&filter_CustomField2=tutorial_types_v1&filter_CustomField3=new%3A2026-10-30",
+    "engagementOriginal": "https://create.roblox.com/dashboard/creations/experiences/10352248866/analytics/funnels?tab=ST_Engagement&rangeType=Last1Day&filter_CustomField1=A&filter_CustomField1=B&filter_CustomField1=C&filter_CustomField2=tutorial_types_v1&filter_CustomField3=new%3A2026-10-30",
+    "meanNew": "https://create.roblox.com/dashboard/creations/experiences/10352248866/analytics/explore?tab=ST_Engagement&rangeType=Last1Day&filter_CustomField1=Type2_A&filter_CustomField1=Type2_B&filter_CustomField1=Type2_C&filter_CustomField2=tutorial_types_v1&filter_CustomField3=new%3A2026-10-30&metric=CustomEventsV2&granularity=Cumulative&filter_CustomEventName=ST_FirstSessionSeconds&filter_AggregationType=Average&chartType=Table&tableColumnsV1=tc1.1U-7DoMwDPwXzyxlqrIh1I5dQF0qhFIwUdQ8qsSJhBD_3pB2gE_o5jvfnX0LRHReWgPsVMBgVdDGA3ss8MIZGBB_Kqwz3Z-gAJrfmGiN5OSQ8G9gUAdPVl8iGvL3Mm0mqShF56xRajTfK3vhjWtMyshVwE0ITdtfpfPUoN_UDQ7WjB66tThmVEI4FJwSareH9hlVKsQFJlO2HWv0Osazm0r_J2VqGwzlKt36AQ",
+    "meanOriginal": "https://create.roblox.com/dashboard/creations/experiences/10352248866/analytics/explore?tab=ST_Engagement&rangeType=Last1Day&filter_CustomField1=A&filter_CustomField1=B&filter_CustomField1=C&filter_CustomField2=tutorial_types_v1&filter_CustomField3=new%3A2026-10-30&metric=CustomEventsV2&granularity=Cumulative&filter_CustomEventName=ST_FirstSessionSeconds&filter_AggregationType=Average&chartType=Table&tableColumnsV1=tc1.1U-7DoMwDPwXzyxlqrIh1I5dQF0qhFIwUdQ8qsSJhBD_3pB2gE_o5jvfnX0LRHReWgPsVMBgVdDGA3ss8MIZGBB_Kqwz3Z-gAJrfmGiN5OSQ8G9gUAdPVl8iGvL3Mm0mqShF56xRajTfK3vhjWtMyshVwE0ITdtfpfPUoN_UDQ7WjB66tThmVEI4FJwSareH9hlVKsQFJlO2HWv0Osazm0r_J2VqGwzlKt36AQ"
+  }
+}

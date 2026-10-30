@@ -1,0 +1,1525 @@
+{
+  "meta": {
+    "pulledOn": "2026-10-30",
+    "timezone": "America/Toronto",
+    "dataLastUpdatedAsDisplayed": "Oct 30, 12:00 PM",
+    "dateRangeAsDisplayed": "Last 1 day",
+    "measurement": "By user",
+    "source": "Roblox Creator Dashboard",
+    "universeId": 10352248866,
+    "placeId": 73877757889690,
+    "funnel": "Onboarding",
+    "schemaFilter": {
+      "CustomField2": "type2_detail_v3"
+    },
+    "sourceUrl": "https://create.roblox.com/dashboard/creations/experiences/10352248866/analytics/funnels?tab=FUNNEL_TYPE_ONBOARDING&rangeType=Last1Day&filter_CustomField2=type2_detail_v3",
+    "capturedAt": "2026-10-30T17:57:29.124Z"
+  },
+  "notes": [
+    "New Type 2 tutorial is confirmed live by recent Onboarding events tagged Type2_C and type2_detail_v3 at Oct 30, 1:06 PM; the event sample is not a population estimate.",
+    "Variants have different stage orders after step 25. Aggregate labels and counts after step 25 in the shared Onboarding table must not be treated as a common sequence. Use the variant-specific tables.",
+    "Counts are observed funnel conversions in the displayed reporting window, not finalized first-session cohorts. Players may still be in progress.",
+    "The earlier TutorialOrder_*_V2 funnels have different scope and completion definitions from the new 46-step Type 2 tutorial. Do not interpret the comparison as a causal effect.",
+    "Blank labels at legacy A/C steps 20 and 21 were preserved as null."
+  ],
+  "summary": {
+    "assigned": 423,
+    "started": 325,
+    "completed": 55,
+    "completionRate": 0.13002364066193853,
+    "completionAmongStarted": 0.16923076923076924,
+    "commonEarlySteps": [
+      {
+        "step": 1,
+        "name": "Assigned",
+        "users": 423,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 1.0
+      },
+      {
+        "step": 2,
+        "name": "TutorialStarted",
+        "users": 325,
+        "stepCompletion": 0.7683215130023641,
+        "churn": 0.23167848699763594,
+        "totalConversion": 0.7683215130023641
+      },
+      {
+        "step": 3,
+        "name": "PoolStairsGuide",
+        "users": 325,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.7683215130023641
+      },
+      {
+        "step": 4,
+        "name": "PoolStairsClimbed",
+        "users": 282,
+        "stepCompletion": 0.8676923076923077,
+        "churn": 0.13230769230769235,
+        "totalConversion": 0.6666666666666666
+      },
+      {
+        "step": 5,
+        "name": "EquipBatGuide",
+        "users": 282,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.6666666666666666
+      },
+      {
+        "step": 6,
+        "name": "BatEquipped",
+        "users": 241,
+        "stepCompletion": 0.8546099290780141,
+        "churn": 0.14539007092198586,
+        "totalConversion": 0.5697399527186762
+      },
+      {
+        "step": 7,
+        "name": "RunnerGuide",
+        "users": 241,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.5697399527186762
+      },
+      {
+        "step": 8,
+        "name": "RunnerHit",
+        "users": 212,
+        "stepCompletion": 0.8796680497925311,
+        "churn": 0.1203319502074689,
+        "totalConversion": 0.5011820330969267
+      },
+      {
+        "step": 9,
+        "name": "RunnerKilled",
+        "users": 158,
+        "stepCompletion": 0.7452830188679245,
+        "churn": 0.2547169811320755,
+        "totalConversion": 0.3735224586288416
+      },
+      {
+        "step": 10,
+        "name": "TimeStolen",
+        "users": 158,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.3735224586288416
+      },
+      {
+        "step": 11,
+        "name": "VentHallwayGuide",
+        "users": 158,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.3735224586288416
+      },
+      {
+        "step": 12,
+        "name": "VentCloseGuide",
+        "users": 139,
+        "stepCompletion": 0.879746835443038,
+        "churn": 0.120253164556962,
+        "totalConversion": 0.32860520094562645
+      },
+      {
+        "step": 13,
+        "name": "VentInteractionStarted",
+        "users": 130,
+        "stepCompletion": 0.935251798561151,
+        "churn": 0.06474820143884896,
+        "totalConversion": 0.3073286052009456
+      },
+      {
+        "step": 14,
+        "name": "VentClosed",
+        "users": 129,
+        "stepCompletion": 0.9923076923076923,
+        "churn": 0.007692307692307665,
+        "totalConversion": 0.3049645390070922
+      },
+      {
+        "step": 15,
+        "name": "ClockHallwayGuide",
+        "users": 129,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.3049645390070922
+      },
+      {
+        "step": 16,
+        "name": "ClockStealGuide",
+        "users": 118,
+        "stepCompletion": 0.9147286821705426,
+        "churn": 0.0852713178294574,
+        "totalConversion": 0.2789598108747045
+      },
+      {
+        "step": 17,
+        "name": "ClockInteractionStarted",
+        "users": 110,
+        "stepCompletion": 0.9322033898305084,
+        "churn": 0.06779661016949157,
+        "totalConversion": 0.26004728132387706
+      },
+      {
+        "step": 18,
+        "name": "ClockStolen",
+        "users": 101,
+        "stepCompletion": 0.9181818181818182,
+        "churn": 0.08181818181818179,
+        "totalConversion": 0.23877068557919623
+      },
+      {
+        "step": 19,
+        "name": "ClockAnimationFinished",
+        "users": 101,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.23877068557919623
+      },
+      {
+        "step": 20,
+        "name": "MonsterReveal",
+        "users": 101,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.23877068557919623
+      },
+      {
+        "step": 21,
+        "name": "ChaseStarted",
+        "users": 101,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.23877068557919623
+      },
+      {
+        "step": 22,
+        "name": "EscapedToSafezone",
+        "users": 97,
+        "stepCompletion": 0.9603960396039604,
+        "churn": 0.03960396039603964,
+        "totalConversion": 0.2293144208037825
+      },
+      {
+        "step": 23,
+        "name": "YakuzaTalkGuide",
+        "users": 97,
+        "stepCompletion": 1.0,
+        "churn": 0.0,
+        "totalConversion": 0.2293144208037825
+      },
+      {
+        "step": 24,
+        "name": "YakuzaDialogueOpened",
+        "users": 92,
+        "stepCompletion": 0.9484536082474226,
+        "churn": 0.05154639175257736,
+        "totalConversion": 0.21749408983451538
+      },
+      {
+        "step": 25,
+        "name": "QuestRewardClaimed",
+        "users": 85,
+        "stepCompletion": 0.9239130434782609,
+        "churn": 0.07608695652173914,
+        "totalConversion": 0.20094562647754138
+      }
+    ]
+  },
+  "type2Variants": {
+    "A": {
+      "assigned": 146,
+      "started": 115,
+      "completed": 14,
+      "completionRate": 0.0958904109589041,
+      "completionAmongStarted": 0.12173913043478261,
+      "steps": [
+        {
+          "step": 1,
+          "name": "Assigned",
+          "users": 146,
+          "stepCompletion": 1,
+          "churn": 0,
+          "totalConversion": 1.0
+        },
+        {
+          "step": 2,
+          "name": "TutorialStarted",
+          "users": 115,
+          "stepCompletion": 0.7876712328767124,
+          "churn": 0.21232876712328763,
+          "totalConversion": 0.7876712328767124
+        },
+        {
+          "step": 3,
+          "name": "PoolStairsGuide",
+          "users": 115,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.7876712328767124
+        },
+        {
+          "step": 4,
+          "name": "PoolStairsClimbed",
+          "users": 101,
+          "stepCompletion": 0.8782608695652174,
+          "churn": 0.12173913043478257,
+          "totalConversion": 0.6917808219178082
+        },
+        {
+          "step": 5,
+          "name": "EquipBatGuide",
+          "users": 101,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.6917808219178082
+        },
+        {
+          "step": 6,
+          "name": "BatEquipped",
+          "users": 88,
+          "stepCompletion": 0.8712871287128713,
+          "churn": 0.12871287128712872,
+          "totalConversion": 0.6027397260273972
+        },
+        {
+          "step": 7,
+          "name": "RunnerGuide",
+          "users": 88,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.6027397260273972
+        },
+        {
+          "step": 8,
+          "name": "RunnerHit",
+          "users": 70,
+          "stepCompletion": 0.7954545454545454,
+          "churn": 0.20454545454545459,
+          "totalConversion": 0.4794520547945205
+        },
+        {
+          "step": 9,
+          "name": "RunnerKilled",
+          "users": 46,
+          "stepCompletion": 0.6571428571428571,
+          "churn": 0.34285714285714286,
+          "totalConversion": 0.3150684931506849
+        },
+        {
+          "step": 10,
+          "name": "TimeStolen",
+          "users": 46,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.3150684931506849
+        },
+        {
+          "step": 11,
+          "name": "VentHallwayGuide",
+          "users": 46,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.3150684931506849
+        },
+        {
+          "step": 12,
+          "name": "VentCloseGuide",
+          "users": 39,
+          "stepCompletion": 0.8478260869565217,
+          "churn": 0.15217391304347827,
+          "totalConversion": 0.2671232876712329
+        },
+        {
+          "step": 13,
+          "name": "VentInteractionStarted",
+          "users": 36,
+          "stepCompletion": 0.9230769230769231,
+          "churn": 0.07692307692307687,
+          "totalConversion": 0.2465753424657534
+        },
+        {
+          "step": 14,
+          "name": "VentClosed",
+          "users": 35,
+          "stepCompletion": 0.9722222222222222,
+          "churn": 0.02777777777777779,
+          "totalConversion": 0.23972602739726026
+        },
+        {
+          "step": 15,
+          "name": "ClockHallwayGuide",
+          "users": 35,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.23972602739726026
+        },
+        {
+          "step": 16,
+          "name": "ClockStealGuide",
+          "users": 30,
+          "stepCompletion": 0.8571428571428571,
+          "churn": 0.1428571428571429,
+          "totalConversion": 0.2054794520547945
+        },
+        {
+          "step": 17,
+          "name": "ClockInteractionStarted",
+          "users": 27,
+          "stepCompletion": 0.9,
+          "churn": 0.09999999999999998,
+          "totalConversion": 0.18493150684931506
+        },
+        {
+          "step": 18,
+          "name": "ClockStolen",
+          "users": 26,
+          "stepCompletion": 0.9629629629629629,
+          "churn": 0.03703703703703709,
+          "totalConversion": 0.1780821917808219
+        },
+        {
+          "step": 19,
+          "name": "ClockAnimationFinished",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1780821917808219
+        },
+        {
+          "step": 20,
+          "name": "MonsterReveal",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1780821917808219
+        },
+        {
+          "step": 21,
+          "name": "ChaseStarted",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1780821917808219
+        },
+        {
+          "step": 22,
+          "name": "EscapedToSafezone",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1780821917808219
+        },
+        {
+          "step": 23,
+          "name": "YakuzaTalkGuide",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1780821917808219
+        },
+        {
+          "step": 24,
+          "name": "YakuzaDialogueOpened",
+          "users": 23,
+          "stepCompletion": 0.8846153846153846,
+          "churn": 0.11538461538461542,
+          "totalConversion": 0.15753424657534246
+        },
+        {
+          "step": 25,
+          "name": "QuestRewardClaimed",
+          "users": 22,
+          "stepCompletion": 0.9565217391304348,
+          "churn": 0.04347826086956519,
+          "totalConversion": 0.1506849315068493
+        },
+        {
+          "step": 26,
+          "name": "BuyTrapGuide",
+          "users": 22,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1506849315068493
+        },
+        {
+          "step": 27,
+          "name": "BearTrapShopOpened",
+          "users": 20,
+          "stepCompletion": 0.9090909090909091,
+          "churn": 0.09090909090909094,
+          "totalConversion": 0.136986301369863
+        },
+        {
+          "step": 28,
+          "name": "BearTrapPickedUp",
+          "users": 20,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.136986301369863
+        },
+        {
+          "step": 29,
+          "name": "PlaceTrapGuide",
+          "users": 20,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.136986301369863
+        },
+        {
+          "step": 30,
+          "name": "BearTrapEquipped",
+          "users": 19,
+          "stepCompletion": 0.95,
+          "churn": 0.050000000000000044,
+          "totalConversion": 0.13013698630136986
+        },
+        {
+          "step": 31,
+          "name": "BearTrapPlaced",
+          "users": 18,
+          "stepCompletion": 0.9473684210526315,
+          "churn": 0.052631578947368474,
+          "totalConversion": 0.1232876712328767
+        },
+        {
+          "step": 32,
+          "name": "ClosetHideGuide",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1232876712328767
+        },
+        {
+          "step": 33,
+          "name": "ClosetEntered",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1232876712328767
+        },
+        {
+          "step": 34,
+          "name": "RunnerApproachedTrap",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1232876712328767
+        },
+        {
+          "step": 35,
+          "name": "RunnerTrapped",
+          "users": 17,
+          "stepCompletion": 0.9444444444444444,
+          "churn": 0.05555555555555558,
+          "totalConversion": 0.11643835616438356
+        },
+        {
+          "step": 36,
+          "name": "AmbushStarted",
+          "users": 17,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.11643835616438356
+        },
+        {
+          "step": 37,
+          "name": "AmbushKillSeen",
+          "users": 17,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.11643835616438356
+        },
+        {
+          "step": 38,
+          "name": "ReturnGuide",
+          "users": 17,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.11643835616438356
+        },
+        {
+          "step": 39,
+          "name": "ReturnedAfterTrap",
+          "users": 14,
+          "stepCompletion": 0.8235294117647058,
+          "churn": 0.17647058823529416,
+          "totalConversion": 0.0958904109589041
+        },
+        {
+          "step": 40,
+          "name": "ClassGuide",
+          "users": 14,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.0958904109589041
+        },
+        {
+          "step": 41,
+          "name": "ClassMenuOpened",
+          "users": 14,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.0958904109589041
+        },
+        {
+          "step": 42,
+          "name": "ClassRolled",
+          "users": 14,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.0958904109589041
+        },
+        {
+          "step": 43,
+          "name": "ClassResultShown",
+          "users": 14,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.0958904109589041
+        },
+        {
+          "step": 44,
+          "name": "ClassMenuClosed",
+          "users": 14,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.0958904109589041
+        },
+        {
+          "step": 45,
+          "name": "CompletionRequested",
+          "users": 14,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.0958904109589041
+        },
+        {
+          "step": 46,
+          "name": "Completed",
+          "users": 14,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.0958904109589041
+        }
+      ]
+    },
+    "B": {
+      "assigned": 134,
+      "started": 97,
+      "completed": 17,
+      "completionRate": 0.12686567164179105,
+      "completionAmongStarted": 0.17525773195876287,
+      "steps": [
+        {
+          "step": 1,
+          "name": "Assigned",
+          "users": 134,
+          "stepCompletion": 1,
+          "churn": 0,
+          "totalConversion": 1.0
+        },
+        {
+          "step": 2,
+          "name": "TutorialStarted",
+          "users": 97,
+          "stepCompletion": 0.7238805970149254,
+          "churn": 0.27611940298507465,
+          "totalConversion": 0.7238805970149254
+        },
+        {
+          "step": 3,
+          "name": "PoolStairsGuide",
+          "users": 97,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.7238805970149254
+        },
+        {
+          "step": 4,
+          "name": "PoolStairsClimbed",
+          "users": 87,
+          "stepCompletion": 0.8969072164948454,
+          "churn": 0.1030927835051546,
+          "totalConversion": 0.6492537313432836
+        },
+        {
+          "step": 5,
+          "name": "EquipBatGuide",
+          "users": 87,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.6492537313432836
+        },
+        {
+          "step": 6,
+          "name": "BatEquipped",
+          "users": 76,
+          "stepCompletion": 0.8735632183908046,
+          "churn": 0.12643678160919536,
+          "totalConversion": 0.5671641791044776
+        },
+        {
+          "step": 7,
+          "name": "RunnerGuide",
+          "users": 76,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.5671641791044776
+        },
+        {
+          "step": 8,
+          "name": "RunnerHit",
+          "users": 72,
+          "stepCompletion": 0.9473684210526315,
+          "churn": 0.052631578947368474,
+          "totalConversion": 0.5373134328358209
+        },
+        {
+          "step": 9,
+          "name": "RunnerKilled",
+          "users": 56,
+          "stepCompletion": 0.7777777777777778,
+          "churn": 0.2222222222222222,
+          "totalConversion": 0.417910447761194
+        },
+        {
+          "step": 10,
+          "name": "TimeStolen",
+          "users": 56,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.417910447761194
+        },
+        {
+          "step": 11,
+          "name": "VentHallwayGuide",
+          "users": 56,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.417910447761194
+        },
+        {
+          "step": 12,
+          "name": "VentCloseGuide",
+          "users": 49,
+          "stepCompletion": 0.875,
+          "churn": 0.125,
+          "totalConversion": 0.3656716417910448
+        },
+        {
+          "step": 13,
+          "name": "VentInteractionStarted",
+          "users": 45,
+          "stepCompletion": 0.9183673469387755,
+          "churn": 0.08163265306122447,
+          "totalConversion": 0.3358208955223881
+        },
+        {
+          "step": 14,
+          "name": "VentClosed",
+          "users": 45,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.3358208955223881
+        },
+        {
+          "step": 15,
+          "name": "ClockHallwayGuide",
+          "users": 45,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.3358208955223881
+        },
+        {
+          "step": 16,
+          "name": "ClockStealGuide",
+          "users": 42,
+          "stepCompletion": 0.9333333333333333,
+          "churn": 0.06666666666666665,
+          "totalConversion": 0.31343283582089554
+        },
+        {
+          "step": 17,
+          "name": "ClockInteractionStarted",
+          "users": 38,
+          "stepCompletion": 0.9047619047619048,
+          "churn": 0.09523809523809523,
+          "totalConversion": 0.2835820895522388
+        },
+        {
+          "step": 18,
+          "name": "ClockStolen",
+          "users": 35,
+          "stepCompletion": 0.9210526315789473,
+          "churn": 0.07894736842105265,
+          "totalConversion": 0.26119402985074625
+        },
+        {
+          "step": 19,
+          "name": "ClockAnimationFinished",
+          "users": 35,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.26119402985074625
+        },
+        {
+          "step": 20,
+          "name": "MonsterReveal",
+          "users": 35,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.26119402985074625
+        },
+        {
+          "step": 21,
+          "name": "ChaseStarted",
+          "users": 35,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.26119402985074625
+        },
+        {
+          "step": 22,
+          "name": "EscapedToSafezone",
+          "users": 33,
+          "stepCompletion": 0.9428571428571428,
+          "churn": 0.05714285714285716,
+          "totalConversion": 0.2462686567164179
+        },
+        {
+          "step": 23,
+          "name": "YakuzaTalkGuide",
+          "users": 33,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.2462686567164179
+        },
+        {
+          "step": 24,
+          "name": "YakuzaDialogueOpened",
+          "users": 32,
+          "stepCompletion": 0.9696969696969697,
+          "churn": 0.030303030303030276,
+          "totalConversion": 0.23880597014925373
+        },
+        {
+          "step": 25,
+          "name": "QuestRewardClaimed",
+          "users": 30,
+          "stepCompletion": 0.9375,
+          "churn": 0.0625,
+          "totalConversion": 0.22388059701492538
+        },
+        {
+          "step": 26,
+          "name": "ClassGuide",
+          "users": 30,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.22388059701492538
+        },
+        {
+          "step": 27,
+          "name": "ClassMenuOpened",
+          "users": 28,
+          "stepCompletion": 0.9333333333333333,
+          "churn": 0.06666666666666665,
+          "totalConversion": 0.208955223880597
+        },
+        {
+          "step": 28,
+          "name": "ClassRolled",
+          "users": 26,
+          "stepCompletion": 0.9285714285714286,
+          "churn": 0.0714285714285714,
+          "totalConversion": 0.19402985074626866
+        },
+        {
+          "step": 29,
+          "name": "ClassResultShown",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.19402985074626866
+        },
+        {
+          "step": 30,
+          "name": "ClassMenuClosed",
+          "users": 25,
+          "stepCompletion": 0.9615384615384616,
+          "churn": 0.038461538461538436,
+          "totalConversion": 0.1865671641791045
+        },
+        {
+          "step": 31,
+          "name": "BuyTrapGuide",
+          "users": 25,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1865671641791045
+        },
+        {
+          "step": 32,
+          "name": "BearTrapShopOpened",
+          "users": 24,
+          "stepCompletion": 0.96,
+          "churn": 0.040000000000000036,
+          "totalConversion": 0.1791044776119403
+        },
+        {
+          "step": 33,
+          "name": "BearTrapPickedUp",
+          "users": 20,
+          "stepCompletion": 0.8333333333333334,
+          "churn": 0.16666666666666663,
+          "totalConversion": 0.14925373134328357
+        },
+        {
+          "step": 34,
+          "name": "PlaceTrapGuide",
+          "users": 20,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.14925373134328357
+        },
+        {
+          "step": 35,
+          "name": "BearTrapEquipped",
+          "users": 20,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.14925373134328357
+        },
+        {
+          "step": 36,
+          "name": "BearTrapPlaced",
+          "users": 18,
+          "stepCompletion": 0.9,
+          "churn": 0.09999999999999998,
+          "totalConversion": 0.13432835820895522
+        },
+        {
+          "step": 37,
+          "name": "ClosetHideGuide",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.13432835820895522
+        },
+        {
+          "step": 38,
+          "name": "ClosetEntered",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.13432835820895522
+        },
+        {
+          "step": 39,
+          "name": "RunnerApproachedTrap",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.13432835820895522
+        },
+        {
+          "step": 40,
+          "name": "RunnerTrapped",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.13432835820895522
+        },
+        {
+          "step": 41,
+          "name": "AmbushStarted",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.13432835820895522
+        },
+        {
+          "step": 42,
+          "name": "AmbushKillSeen",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.13432835820895522
+        },
+        {
+          "step": 43,
+          "name": "ReturnGuide",
+          "users": 18,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.13432835820895522
+        },
+        {
+          "step": 44,
+          "name": "ReturnedAfterTrap",
+          "users": 17,
+          "stepCompletion": 0.9444444444444444,
+          "churn": 0.05555555555555558,
+          "totalConversion": 0.12686567164179105
+        },
+        {
+          "step": 45,
+          "name": "CompletionRequested",
+          "users": 17,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.12686567164179105
+        },
+        {
+          "step": 46,
+          "name": "Completed",
+          "users": 17,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.12686567164179105
+        }
+      ]
+    },
+    "C": {
+      "assigned": 143,
+      "started": 113,
+      "completed": 24,
+      "completionRate": 0.16783216783216784,
+      "completionAmongStarted": 0.21238938053097345,
+      "steps": [
+        {
+          "step": 1,
+          "name": "Assigned",
+          "users": 143,
+          "stepCompletion": 1,
+          "churn": 0,
+          "totalConversion": 1.0
+        },
+        {
+          "step": 2,
+          "name": "TutorialStarted",
+          "users": 113,
+          "stepCompletion": 0.7902097902097902,
+          "churn": 0.2097902097902098,
+          "totalConversion": 0.7902097902097902
+        },
+        {
+          "step": 3,
+          "name": "PoolStairsGuide",
+          "users": 113,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.7902097902097902
+        },
+        {
+          "step": 4,
+          "name": "PoolStairsClimbed",
+          "users": 94,
+          "stepCompletion": 0.831858407079646,
+          "churn": 0.16814159292035402,
+          "totalConversion": 0.6573426573426573
+        },
+        {
+          "step": 5,
+          "name": "EquipBatGuide",
+          "users": 94,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.6573426573426573
+        },
+        {
+          "step": 6,
+          "name": "BatEquipped",
+          "users": 77,
+          "stepCompletion": 0.8191489361702128,
+          "churn": 0.18085106382978722,
+          "totalConversion": 0.5384615384615384
+        },
+        {
+          "step": 7,
+          "name": "RunnerGuide",
+          "users": 77,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.5384615384615384
+        },
+        {
+          "step": 8,
+          "name": "RunnerHit",
+          "users": 70,
+          "stepCompletion": 0.9090909090909091,
+          "churn": 0.09090909090909094,
+          "totalConversion": 0.48951048951048953
+        },
+        {
+          "step": 9,
+          "name": "RunnerKilled",
+          "users": 56,
+          "stepCompletion": 0.8,
+          "churn": 0.19999999999999996,
+          "totalConversion": 0.3916083916083916
+        },
+        {
+          "step": 10,
+          "name": "TimeStolen",
+          "users": 56,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.3916083916083916
+        },
+        {
+          "step": 11,
+          "name": "VentHallwayGuide",
+          "users": 56,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.3916083916083916
+        },
+        {
+          "step": 12,
+          "name": "VentCloseGuide",
+          "users": 51,
+          "stepCompletion": 0.9107142857142857,
+          "churn": 0.0892857142857143,
+          "totalConversion": 0.35664335664335667
+        },
+        {
+          "step": 13,
+          "name": "VentInteractionStarted",
+          "users": 49,
+          "stepCompletion": 0.9607843137254902,
+          "churn": 0.039215686274509776,
+          "totalConversion": 0.34265734265734266
+        },
+        {
+          "step": 14,
+          "name": "VentClosed",
+          "users": 49,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.34265734265734266
+        },
+        {
+          "step": 15,
+          "name": "ClockHallwayGuide",
+          "users": 49,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.34265734265734266
+        },
+        {
+          "step": 16,
+          "name": "ClockStealGuide",
+          "users": 46,
+          "stepCompletion": 0.9387755102040817,
+          "churn": 0.061224489795918324,
+          "totalConversion": 0.32167832167832167
+        },
+        {
+          "step": 17,
+          "name": "ClockInteractionStarted",
+          "users": 45,
+          "stepCompletion": 0.9782608695652174,
+          "churn": 0.021739130434782594,
+          "totalConversion": 0.3146853146853147
+        },
+        {
+          "step": 18,
+          "name": "ClockStolen",
+          "users": 40,
+          "stepCompletion": 0.8888888888888888,
+          "churn": 0.11111111111111116,
+          "totalConversion": 0.27972027972027974
+        },
+        {
+          "step": 19,
+          "name": "ClockAnimationFinished",
+          "users": 40,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.27972027972027974
+        },
+        {
+          "step": 20,
+          "name": "MonsterReveal",
+          "users": 40,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.27972027972027974
+        },
+        {
+          "step": 21,
+          "name": "ChaseStarted",
+          "users": 40,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.27972027972027974
+        },
+        {
+          "step": 22,
+          "name": "EscapedToSafezone",
+          "users": 38,
+          "stepCompletion": 0.95,
+          "churn": 0.050000000000000044,
+          "totalConversion": 0.26573426573426573
+        },
+        {
+          "step": 23,
+          "name": "YakuzaTalkGuide",
+          "users": 38,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.26573426573426573
+        },
+        {
+          "step": 24,
+          "name": "YakuzaDialogueOpened",
+          "users": 37,
+          "stepCompletion": 0.9736842105263158,
+          "churn": 0.02631578947368418,
+          "totalConversion": 0.25874125874125875
+        },
+        {
+          "step": 25,
+          "name": "QuestRewardClaimed",
+          "users": 33,
+          "stepCompletion": 0.8918918918918919,
+          "churn": 0.10810810810810811,
+          "totalConversion": 0.23076923076923078
+        },
+        {
+          "step": 26,
+          "name": "BuyTrapGuide",
+          "users": 33,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.23076923076923078
+        },
+        {
+          "step": 27,
+          "name": "BearTrapShopOpened",
+          "users": 29,
+          "stepCompletion": 0.8787878787878788,
+          "churn": 0.12121212121212122,
+          "totalConversion": 0.20279720279720279
+        },
+        {
+          "step": 28,
+          "name": "BearTrapPickedUp",
+          "users": 29,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.20279720279720279
+        },
+        {
+          "step": 29,
+          "name": "ClassGuide",
+          "users": 29,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.20279720279720279
+        },
+        {
+          "step": 30,
+          "name": "ClassMenuOpened",
+          "users": 27,
+          "stepCompletion": 0.9310344827586207,
+          "churn": 0.06896551724137934,
+          "totalConversion": 0.1888111888111888
+        },
+        {
+          "step": 31,
+          "name": "ClassRolled",
+          "users": 27,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1888111888111888
+        },
+        {
+          "step": 32,
+          "name": "ClassResultShown",
+          "users": 27,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1888111888111888
+        },
+        {
+          "step": 33,
+          "name": "ClassMenuClosed",
+          "users": 27,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1888111888111888
+        },
+        {
+          "step": 34,
+          "name": "PlaceTrapGuide",
+          "users": 27,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1888111888111888
+        },
+        {
+          "step": 35,
+          "name": "BearTrapEquipped",
+          "users": 27,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.1888111888111888
+        },
+        {
+          "step": 36,
+          "name": "BearTrapPlaced",
+          "users": 26,
+          "stepCompletion": 0.9629629629629629,
+          "churn": 0.03703703703703709,
+          "totalConversion": 0.18181818181818182
+        },
+        {
+          "step": 37,
+          "name": "ClosetHideGuide",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.18181818181818182
+        },
+        {
+          "step": 38,
+          "name": "ClosetEntered",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.18181818181818182
+        },
+        {
+          "step": 39,
+          "name": "RunnerApproachedTrap",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.18181818181818182
+        },
+        {
+          "step": 40,
+          "name": "RunnerTrapped",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.18181818181818182
+        },
+        {
+          "step": 41,
+          "name": "AmbushStarted",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.18181818181818182
+        },
+        {
+          "step": 42,
+          "name": "AmbushKillSeen",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.18181818181818182
+        },
+        {
+          "step": 43,
+          "name": "ReturnGuide",
+          "users": 26,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.18181818181818182
+        },
+        {
+          "step": 44,
+          "name": "ReturnedAfterTrap",
+          "users": 24,
+          "stepCompletion": 0.9230769230769231,
+          "churn": 0.07692307692307687,
+          "totalConversion": 0.16783216783216784
+        },
+        {
+          "step": 45,
+          "name": "CompletionRequested",
+          "users": 24,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.16783216783216784
+        },
+        {
+          "step": 46,
+          "name": "Completed",
+          "users": 24,
+          "stepCompletion": 1.0,
+          "churn": 0.0,
+          "totalConversion": 0.16783216783216784
+        }
+      ]
+    }
+  },
+  "previousTutorialOrderV2": {
+    "filter": "No custom-field filters; same Last 1 day view",
+    "A": {
+      "assigned": 118,
+      "started": 91,
+      "completed": 26
+    },
+    "B": {
+      "assigned": 120,
+      "started": 88,
+      "completed": 33
+    },
+    "C": {
+      "assigned": 95,
+      "started": 73,
+      "completed": 30
+    },
+    "total": {
+      "assigned": 333,
+      "started": 252,
+      "completed": 89,
+      "completionRate": 0.2672672672672673
+    }
+  },
+  "previousFollowupV2": {
+    "filter": "No custom-field filters; same Last 1 day view",
+    "steps": [
+      {
+        "step": 1,
+        "name": "TutorialCompleted",
+        "users": 94,
+        "stepCompletion": 1,
+        "churn": 0,
+        "totalConversion": 1
+      },
+      {
+        "step": 2,
+        "name": "QuestOfferOpened",
+        "users": 78,
+        "stepCompletion": 0.8297872340425532,
+        "churn": 0.17021276595744683,
+        "totalConversion": 0.8297872340425532
+      },
+      {
+        "step": 3,
+        "name": "QuestAccepted",
+        "users": 77,
+        "stepCompletion": 0.9871794871794872,
+        "churn": 0.012820512820512775,
+        "totalConversion": 0.8191489361702128
+      },
+      {
+        "step": 4,
+        "name": "Objective1Started",
+        "users": 43,
+        "stepCompletion": 0.5584415584415584,
+        "churn": 0.4415584415584416,
+        "totalConversion": 0.4574468085106383
+      },
+      {
+        "step": 5,
+        "name": "Objective1Attempted",
+        "users": 43,
+        "stepCompletion": 1,
+        "churn": 0,
+        "totalConversion": 0.4574468085106383
+      },
+      {
+        "step": 6,
+        "name": "Objective2Started",
+        "users": 28,
+        "stepCompletion": 0.6511627906976745,
+        "churn": 0.34883720930232553,
+        "totalConversion": 0.2978723404255319
+      },
+      {
+        "step": 7,
+        "name": "Objective2Attempted",
+        "users": 28,
+        "stepCompletion": 1,
+        "churn": 0,
+        "totalConversion": 0.2978723404255319
+      },
+      {
+        "step": 8,
+        "name": "Objective3Started",
+        "users": 16,
+        "stepCompletion": 0.5714285714285714,
+        "churn": 0.4285714285714286,
+        "totalConversion": 0.1702127659574468
+      },
+      {
+        "step": 9,
+        "name": "ThreeObjectivesAttempted",
+        "users": 16,
+        "stepCompletion": 1,
+        "churn": 0,
+        "totalConversion": 0.1702127659574468
+      },
+      {
+        "step": 10,
+        "name": "KnifeClaimOpened",
+        "users": 11,
+        "stepCompletion": 0.6875,
+        "churn": 0.3125,
+        "totalConversion": 0.11702127659574468
+      },
+      {
+        "step": 11,
+        "name": "KnifeClaimed",
+        "users": 11,
+        "stepCompletion": 1,
+        "churn": 0,
+        "totalConversion": 0.11702127659574468
+      },
+      {
+        "step": 12,
+        "name": "FirstTimeStolen",
+        "users": 6,
+        "stepCompletion": 0.5454545454545454,
+        "churn": 0.4545454545454546,
+        "totalConversion": 0.06382978723404255
+      },
+      {
+        "step": 13,
+        "name": "25SecondsStolen",
+        "users": 6,
+        "stepCompletion": 1,
+        "churn": 0,
+        "totalConversion": 0.06382978723404255
+      },
+      {
+        "step": 14,
+        "name": "50SecondsStolen",
+        "users": 6,
+        "stepCompletion": 1,
+        "churn": 0,
+        "totalConversion": 0.06382978723404255
+      },
+      {
+        "step": 15,
+        "name": "100SecondsStolen",
+        "users": 6,
+        "stepCompletion": 1,
+        "churn": 0,
+        "totalConversion": 0.06382978723404255
+      },
+      {
+        "step": 16,
+        "name": "StealRewardClaimed",
+        "users": 6,
+        "stepCompletion": 1,
+        "churn": 0,
+        "totalConversion": 0.06382978723404255
+      }
+    ]
+  },
+  "previousCaptureNote": "previousTutorialOrderV2 and previousFollowupV2 are earlier Oct 30 11:00 AM dashboard snapshot; Type 2 data refreshed to 12:00 PM."
+}

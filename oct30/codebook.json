@@ -1,0 +1,569 @@
+{
+  "Assigned": {
+    "meaning": "The V3 tracker attaches to a fresh, eligible Type 2 assignment and records its first onboarding step.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 77,
+    "caution": "This starts after profile attachment. It does not mean the player has control, saw an instruction, or started the tutorial.",
+    "next": "Compare startup readiness and stage exits before blaming the first instruction."
+  },
+  "TutorialStarted": {
+    "meaning": "The analytics started hook marks the tutorial as started; this is a recorded start, separate from assignment.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 99,
+    "caution": "The assigned-to-start gap includes pre-tutorial startup friction. It is not a direct rejection rate for the tutorial.",
+    "next": "Join startup checkpoints to the same experiment and enrollment cohort."
+  },
+  "PoolStairsGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "EquipBatGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "RunnerGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "VentHallwayGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "VentCloseGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "ClockHallwayGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "ClockStealGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "YakuzaTalkGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "BuyTrapGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "ClassGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "PlaceTrapGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "ClosetHideGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "ReturnGuide": {
+    "meaning": "The server publishes the corresponding tutorial stage, and the tracker records its guide checkpoint.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 16,
+    "caution": "Guide means the stage was issued. It does not prove the instruction rendered, was read, or was understood.",
+    "next": "Use the next player action, stage exits, 60-second stalls, and observation-gap signals to distinguish confusion from missing delivery."
+  },
+  "PoolStairsClimbed": {
+    "meaning": "The player is within 10 studs of the configured stairs target; the server advances Climb to EquipBat.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 274,
+    "caution": "This is a proximity gate, not a literal check that every stair was climbed.",
+    "next": "Inspect the camera direction, navigation target, and first 10 seconds on phone and computer."
+  },
+  "BatEquipped": {
+    "meaning": "A recognized bat Tool is in the character AND at least 4.5 seconds have elapsed in EquipBat.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 275,
+    "caution": "A player who equips immediately can still wait for the fixed stage timer. The event measures both the action and this gate.",
+    "next": "Test advancing as soon as equipped while the narration continues; make the inventory action explicit."
+  },
+  "RunnerHit": {
+    "meaning": "The server sees a new LastTrapToolAt on the tutorial carrier. The successful death path also marks RunnerHit as a fallback.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 291,
+    "caution": "One hit is not success. The runner must die in the pit with a positive payout credited to this player.",
+    "next": "Check retry counts, alignment, knockback direction and whether the pit objective is obvious."
+  },
+  "RunnerKilled": {
+    "meaning": "The carrier death handler verifies the correct owner/run, a HazardFallPitName, this player as payout killer, and payout.total > 0.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 202,
+    "caution": "These two milestones share the same success path. Their 100% transition is not two independent successes.",
+    "next": "Test an assisted first knockback, a visible aiming/standing position, and a stable first runner."
+  },
+  "TimeStolen": {
+    "meaning": "The carrier death handler verifies the correct owner/run, a HazardFallPitName, this player as payout killer, and payout.total > 0.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 202,
+    "caution": "These two milestones share the same success path. Their 100% transition is not two independent successes.",
+    "next": "Test an assisted first knockback, a visible aiming/standing position, and a stable first runner."
+  },
+  "VentInteractionStarted": {
+    "meaning": "The validated objective interaction-start hook marks the corresponding tutorial interaction.",
+    "source": "ServerScriptService.ObjectiveExpansion",
+    "line": null,
+    "caution": "These are interaction attempts. They are not proof that a vent was closed or a clock was stolen. This audit verified the instrumented hook in the saved integration snapshot; the source line is not pinned.",
+    "next": "Separate reaching the prompt, beginning the interaction, and completing it."
+  },
+  "ClockInteractionStarted": {
+    "meaning": "The validated objective interaction-start hook marks the corresponding tutorial interaction.",
+    "source": "ServerScriptService.ObjectiveExpansion",
+    "line": null,
+    "caution": "These are interaction attempts. They are not proof that a vent was closed or a clock was stolen. This audit verified the instrumented hook in the saved integration snapshot; the source line is not pinned.",
+    "next": "Separate reaching the prompt, beginning the interaction, and completing it."
+  },
+  "VentClosed": {
+    "meaning": "The complete_objective signal for this run\u2019s private vent advances CloseVent to ClockWalk.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 347,
+    "caution": "The tracker derives this milestone from the next server stage. A retry or interruption is separate.",
+    "next": "The 130 to 129 observed transition is small; prioritize the earlier losses first."
+  },
+  "ClockStolen": {
+    "meaning": "An objective-complete signal in the Clock stage records dClockStolen and enters ClockFinish.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 347,
+    "caution": "The clock celebration animation can still be running after this event.",
+    "next": "Inspect ClockRetry and stage exits for players who start interacting but do not steal it."
+  },
+  "ClockAnimationFinished": {
+    "meaning": "The animation-finished signal advances to Reveal; after the configured reveal time the server enters Escape.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 278,
+    "caution": "These are consecutive server-stage observations. They do not independently prove that every cinematic frame was displayed.",
+    "next": "Do not interpret their identical counts as evidence that presentation cannot fail."
+  },
+  "MonsterReveal": {
+    "meaning": "The animation-finished signal advances to Reveal; after the configured reveal time the server enters Escape.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 278,
+    "caution": "These are consecutive server-stage observations. They do not independently prove that every cinematic frame was displayed.",
+    "next": "Do not interpret their identical counts as evidence that presentation cannot fail."
+  },
+  "ChaseStarted": {
+    "meaning": "The animation-finished signal advances to Reveal; after the configured reveal time the server enters Escape.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 278,
+    "caution": "These are consecutive server-stage observations. They do not independently prove that every cinematic frame was displayed.",
+    "next": "Do not interpret their identical counts as evidence that presentation cannot fail."
+  },
+  "EscapedToSafezone": {
+    "meaning": "During Escape, the player is inside a safe zone and the escape reward path succeeds before Yakuza is published.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 279,
+    "caution": "This is the guided tutorial escape, separate from the post-tutorial core loop.",
+    "next": "Keep this as a guardrail when changing early difficulty; current observed conversion is high."
+  },
+  "YakuzaDialogueOpened": {
+    "meaning": "The validated view request for GangMember2 occurs while the Type 2 run is in Yakuza.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 214,
+    "caution": "Opening the reward dialogue does not grant the reward.",
+    "next": "Inspect the route to John and the Claim button if this gap grows."
+  },
+  "QuestRewardClaimed": {
+    "meaning": "John\u2019s claim grants the permanent Knife idempotently, pays the reward, and publishes QuestClaimed.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 214,
+    "caution": "Type 2 already earns its Knife here. The legacy three-objective Knife quest is a different path.",
+    "next": "Check claim errors separately from navigation. Do not add the legacy Knife gate to Type 2."
+  },
+  "BearTrapShopOpened": {
+    "meaning": "A client presentation acknowledgement is accepted for the matching stage (or a permitted late acknowledgement).",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 120,
+    "caution": "These are presentation observations. V3 waits for a contiguous observed prefix, so a missing acknowledgement can hold back later displayed steps.",
+    "next": "Inspect ST_ExperienceSignal with ObservationGap before treating every missing conversion as a player exit."
+  },
+  "ClassMenuOpened": {
+    "meaning": "A client presentation acknowledgement is accepted for the matching stage (or a permitted late acknowledgement).",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 120,
+    "caution": "These are presentation observations. V3 waits for a contiguous observed prefix, so a missing acknowledgement can hold back later displayed steps.",
+    "next": "Inspect ST_ExperienceSignal with ObservationGap before treating every missing conversion as a player exit."
+  },
+  "BearTrapPickedUp": {
+    "meaning": "The trap-purchased callback during BuyTrap marks pickup and advances the lesson order.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 243,
+    "caution": "The tutorial trap is free; this is not a Robux purchase or proof of spending intent.",
+    "next": "Check shop approach and the pickup affordance, especially with touch controls."
+  },
+  "ClassRolled": {
+    "meaning": "The tracker observes the server-owned classRolled flag during the RollClass stage.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 128,
+    "caution": "A class roll and its result presentation are separate observations.",
+    "next": "Use roll success and result/close checkpoints to isolate UI friction."
+  },
+  "ClassResultShown": {
+    "meaning": "A permitted presentation acknowledgement is accepted only when the server classRolled flag is true.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 120,
+    "caution": "This does not measure satisfaction with the class.",
+    "next": "Inspect presentation errors and the Close action."
+  },
+  "ClassMenuClosed": {
+    "meaning": "The server accepts classPresentationFinished after a roll in the safe zone; then it advances lessons.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 195,
+    "caution": "The client waits until class presentation is no longer busy and the menu is closed.",
+    "next": "Keep the result close/continue control obvious; avoid treating roll completion as menu closure."
+  },
+  "BearTrapEquipped": {
+    "meaning": "The stage sampler detects a recognized Bear Trap Tool. Successful placement also marks this as a fallback.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 252,
+    "caution": "A placement can backfill this prerequisite in the tracker. It is not a count of every equip attempt.",
+    "next": "Test the equip-to-place affordance and a visible placement preview."
+  },
+  "BearTrapPlaced": {
+    "meaning": "After the validated trap-placement callback, the run enters Hide and marks trap placement.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 251,
+    "caution": "Placement is constrained to the tutorial trap location, within 13 studs of the target and near the player.",
+    "next": "Show the permitted placement region before the player attempts to place the trap."
+  },
+  "ClosetEntered": {
+    "meaning": "The server observes ClosetHiddenReady near the intended closet and starts the ambush runner walk.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 265,
+    "caution": "These labels describe server state. Entering the closet triggers the scripted encounter.",
+    "next": "Check entry readiness and repeated hide attempts if this transition stalls."
+  },
+  "RunnerApproachedTrap": {
+    "meaning": "The server observes ClosetHiddenReady near the intended closet and starts the ambush runner walk.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 265,
+    "caution": "These labels describe server state. Entering the closet triggers the scripted encounter.",
+    "next": "Check entry readiness and repeated hide attempts if this transition stalls."
+  },
+  "RunnerTrapped": {
+    "meaning": "The server sees the ambush runner captured while the player is hidden near the closet, then publishes Ambush.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 280,
+    "caution": "These two checkpoints come from one stage transition.",
+    "next": "Inspect actual trap and hiding conditions rather than interpreting the pair as separate user decisions."
+  },
+  "AmbushStarted": {
+    "meaning": "The server sees the ambush runner captured while the player is hidden near the closet, then publishes Ambush.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 280,
+    "caution": "These two checkpoints come from one stage transition.",
+    "next": "Inspect actual trap and hiding conditions rather than interpreting the pair as separate user decisions."
+  },
+  "AmbushKillSeen": {
+    "meaning": "The ambush hit succeeds on the server, which records dAmbushComplete and marks the checkpoint.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 283,
+    "caution": "Despite the word Seen, the event is a server kill result; it is not an eye-tracking or camera-visible signal.",
+    "next": "Use it as encounter completion, and verify the presentation separately in a playtest."
+  },
+  "ReturnedAfterTrap": {
+    "meaning": "The player reaches a safe zone during Return; the server marks dReturnedAfterTrap and advances the remaining lessons.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 288,
+    "caution": "A and B/C reach this at different positions in their lesson order.",
+    "next": "Compare label-matched steps within each variant, not shared step numbers after step 25."
+  },
+  "CompletionRequested": {
+    "meaning": "All configured lessons have been satisfied, the player is safe, and the finish callback is requested.",
+    "source": "ServerScriptService.TutorialType2Service",
+    "line": 184,
+    "caution": "This is a finish request, not the confirmed persisted completion.",
+    "next": "Check the subsequent Completed step; no observed gap appears in this snapshot."
+  },
+  "Completed": {
+    "meaning": "The tutorial completed flag and the confirmed-completion predicate are both satisfied.",
+    "source": "ServerScriptService.TutorialType2Analytics",
+    "line": 128,
+    "caution": "V3 only emits a contiguous observed prefix. Completed here is period funnel reach, not necessarily first-session completion.",
+    "next": "Read ST_FirstSessionCompletion for a first-session-only outcome, with mature records."
+  },
+  "Joined": {
+    "meaning": "The startup tracker records the corresponding join, profile attach or validated client presentation checkpoint.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 57,
+    "caution": "By user period counts can include multiple visits. Route-specific entry funnels start only after the profile identifies the route.",
+    "next": "Use ST_StartupV2 for the join denominator; avoid splicing different funnel denominators together."
+  },
+  "ProfileLoaded": {
+    "meaning": "The startup tracker records the corresponding join, profile attach or validated client presentation checkpoint.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 57,
+    "caution": "By user period counts can include multiple visits. Route-specific entry funnels start only after the profile identifies the route.",
+    "next": "Use ST_StartupV2 for the join denominator; avoid splicing different funnel denominators together."
+  },
+  "ClientReady": {
+    "meaning": "The startup tracker records the corresponding join, profile attach or validated client presentation checkpoint.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 57,
+    "caution": "By user period counts can include multiple visits. Route-specific entry funnels start only after the profile identifies the route.",
+    "next": "Use ST_StartupV2 for the join denominator; avoid splicing different funnel denominators together."
+  },
+  "GameplayReady": {
+    "meaning": "The startup tracker records the corresponding join, profile attach or validated client presentation checkpoint.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 57,
+    "caution": "By user period counts can include multiple visits. Route-specific entry funnels start only after the profile identifies the route.",
+    "next": "Use ST_StartupV2 for the join denominator; avoid splicing different funnel denominators together."
+  },
+  "CutsceneStarted": {
+    "meaning": "The opening presentation reports a real start and a terminal outcome; contiguous route checkpoints advance.",
+    "source": "ServerScriptService.FunnelAnalyticsJourney",
+    "line": 146,
+    "caution": "CutsceneEnded includes completed, skipped or interrupted presentations. It does not mean fully watched. FirstVisit means the opening had not been marked seen, even for an existing player.",
+    "next": "Use ST_OpeningOutcome and phased ST_StartupSeconds; do not label the whole delay technical loading."
+  },
+  "CutsceneEnded": {
+    "meaning": "The opening presentation reports a real start and a terminal outcome; contiguous route checkpoints advance.",
+    "source": "ServerScriptService.FunnelAnalyticsJourney",
+    "line": 146,
+    "caution": "CutsceneEnded includes completed, skipped or interrupted presentations. It does not mean fully watched. FirstVisit means the opening had not been marked seen, even for an existing player.",
+    "next": "Use ST_OpeningOutcome and phased ST_StartupSeconds; do not label the whole delay technical loading."
+  },
+  "MenuReady": {
+    "meaning": "The returning-player route records the ready menu and the actual Play click.",
+    "source": "ServerScriptService.FunnelAnalyticsJourney",
+    "line": 119,
+    "caution": "First-view players do not need this menu or Play click. A rejoin route is not the same as next-day retention.",
+    "next": "Inspect menu readiness and the Play affordance separately from the first-view opening."
+  },
+  "PlayPressed": {
+    "meaning": "The returning-player route records the ready menu and the actual Play click.",
+    "source": "ServerScriptService.FunnelAnalyticsJourney",
+    "line": 119,
+    "caution": "First-view players do not need this menu or Play click. A rejoin route is not the same as next-day retention.",
+    "next": "Inspect menu readiness and the Play affordance separately from the first-view opening."
+  },
+  "LeftSafezone": {
+    "meaning": "Location sampling sees a living player outside safety after GameplayReady, while the tutorial is inactive.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 212,
+    "caution": "The denominator includes players still doing the tutorial; this gap cannot isolate free-roam confusion.",
+    "next": "Filter to tutorial-completed players and same-session post-tutorial exposure before judging this conversion."
+  },
+  "StoleTime": {
+    "meaning": "A positive LifetimeTimeStolen delta is sampled outside the tutorial while this excursion is active.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 256,
+    "caution": "Tutorial theft is deliberately excluded. The event is a counter delta, not every attack or a pure PvP win rate.",
+    "next": "Inspect the first unaided excursion and return loop after tutorial completion."
+  },
+  "ReturnedAlive": {
+    "meaning": "A player who stole time on an active excursion returns to safety alive. Death clears the excursion.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 219,
+    "caution": "This is a core-loop success even if the player never deposits in the bank.",
+    "next": "Separate return survival from optional banking behavior."
+  },
+  "DepositedTime": {
+    "meaning": "A positive lifetime bank-deposit delta is sampled after ReturnedAlive in the same session.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 260,
+    "caution": "Zero is not zero successful loops. This is a later banking step with a narrow sequential gate.",
+    "next": "Verify bank discovery, usefulness, and timing before changing combat based on this row."
+  },
+  "TutorialCompleted": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "QuestOfferOpened": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "QuestAccepted": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "Objective1Started": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "Objective1Attempted": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "Objective2Started": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "Objective2Attempted": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "Objective3Started": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "ThreeObjectivesAttempted": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "KnifeClaimOpened": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "KnifeClaimed": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "FirstTimeStolen": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "25SecondsStolen": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "50SecondsStolen": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "100SecondsStolen": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "StealRewardClaimed": {
+    "meaning": "The legacy follow-up tracks John\u2019s quest offer, three objective attempts, Knife claim, then theft reward thresholds.",
+    "source": "ServerScriptService.FunnelAnalyticsDetail",
+    "line": 50,
+    "caution": "ST_FollowupV2 explicitly excludes Type 2. Both objective success and failure count as attempts, and later milestones can credit skipped earlier steps.",
+    "next": "For this legacy path, improve accepted quest to first objective navigation; do not infer 100% objective success from matched counts."
+  },
+  "SessionStarted": {
+    "meaning": "The player reaches the indicated elapsed playtime milestone within a session; the funnel is viewed By user.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 265,
+    "caution": "A returning session in the window can qualify. This is not a finalized first-session survival curve. In ST_Monetization, SessionStarted only anchors the shop funnel.",
+    "next": "Use the built-in first-session retention chart or mature first-session records for comparable first-visit retention."
+  },
+  "1Minutes": {
+    "meaning": "The player reaches the indicated elapsed playtime milestone within a session; the funnel is viewed By user.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 265,
+    "caution": "A returning session in the window can qualify. This is not a finalized first-session survival curve. In ST_Monetization, SessionStarted only anchors the shop funnel.",
+    "next": "Use the built-in first-session retention chart or mature first-session records for comparable first-visit retention."
+  },
+  "3Minutes": {
+    "meaning": "The player reaches the indicated elapsed playtime milestone within a session; the funnel is viewed By user.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 265,
+    "caution": "A returning session in the window can qualify. This is not a finalized first-session survival curve. In ST_Monetization, SessionStarted only anchors the shop funnel.",
+    "next": "Use the built-in first-session retention chart or mature first-session records for comparable first-visit retention."
+  },
+  "5Minutes": {
+    "meaning": "The player reaches the indicated elapsed playtime milestone within a session; the funnel is viewed By user.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 265,
+    "caution": "A returning session in the window can qualify. This is not a finalized first-session survival curve. In ST_Monetization, SessionStarted only anchors the shop funnel.",
+    "next": "Use the built-in first-session retention chart or mature first-session records for comparable first-visit retention."
+  },
+  "10Minutes": {
+    "meaning": "The player reaches the indicated elapsed playtime milestone within a session; the funnel is viewed By user.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 265,
+    "caution": "A returning session in the window can qualify. This is not a finalized first-session survival curve. In ST_Monetization, SessionStarted only anchors the shop funnel.",
+    "next": "Use the built-in first-session retention chart or mature first-session records for comparable first-visit retention."
+  },
+  "20Minutes": {
+    "meaning": "The player reaches the indicated elapsed playtime milestone within a session; the funnel is viewed By user.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 265,
+    "caution": "A returning session in the window can qualify. This is not a finalized first-session survival curve. In ST_Monetization, SessionStarted only anchors the shop funnel.",
+    "next": "Use the built-in first-session retention chart or mature first-session records for comparable first-visit retention."
+  },
+  "30Minutes": {
+    "meaning": "The player reaches the indicated elapsed playtime milestone within a session; the funnel is viewed By user.",
+    "source": "ServerScriptService.FunnelAnalyticsCore",
+    "line": 265,
+    "caution": "A returning session in the window can qualify. This is not a finalized first-session survival curve. In ST_Monetization, SessionStarted only anchors the shop funnel.",
+    "next": "Use the built-in first-session retention chart or mature first-session records for comparable first-visit retention."
+  }
+}
