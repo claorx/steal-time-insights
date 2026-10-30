@@ -274,6 +274,7 @@
     "The current Studio TutorialExperiment ID is tutorial_types_50_50_v1. Earlier dashboard comparisons are tagged tutorial_types_v1. Fresh assignments are 50/50 by type in the inspected code; existing assignments stay sticky. Do not pool these experiment IDs.",
     "Type 2 awards its permanent Knife during the first John reward. The legacy ST_FollowupV2 three-objective Knife quest explicitly excludes Type 2.",
     "ST_CoreLoop ignores movement and theft while the tutorial is active. Its GameplayReady denominator includes players who have not finished the tutorial. The exit-from-safety gap is not a clean measure of free-roam confusion.",
-    "ST_Monetization exposed only its SessionStarted step in this period (948 users). No purchase-conversion estimate or revenue conclusion is supported by that funnel."
+    "ST_Monetization exposed only its SessionStarted step in this period (948 users). No purchase-conversion estimate or revenue conclusion is supported by that funnel.",
+    "The UTC enrollment segment new:2026-10-30 starts at Oct 29 20:00 EDT. It spans the user-reported Oct 30 01:00 EDT tutorial release. A calendar-day tag alone is not an exact release-hour cohort split."
   ]
 }
